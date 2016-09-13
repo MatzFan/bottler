@@ -2,3 +2,6 @@ language: ruby
 
 os:
   - osx # Mavericks
+
+before_install:
+  - brew update

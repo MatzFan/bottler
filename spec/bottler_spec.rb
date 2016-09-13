@@ -2,11 +2,19 @@ require_relative '../lib/bottler.rb'
 
 describe Bottler do
   let(:bottler) { Bottler.new }
+  let(:tap) { ENV['TAP'] }
   let(:formula) { ENV['FORMULA'] }
 
   context '#list' do
     it 'lists installed homebrew formula' do
       expect(bottler.list).not_to be_empty
+    end
+  end
+
+  context '#tap' do
+    it 'adds a new homebrew tap' do
+      bottler.tap(tap)
+      expect(bottler.taps).to include(tap)
     end
   end
 
