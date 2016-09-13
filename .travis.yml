@@ -1,5 +1,5 @@
-osx_image: beta-xcode6.3 # Yosemite
-
 language: ruby
-rvm:
-  - 2.2.0 # pre-installed
+
+osx # Mavericks
+
+# osx_image: beta-xcode6.3 # Yosemite
