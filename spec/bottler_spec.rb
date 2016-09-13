@@ -2,7 +2,7 @@ require_relative '../lib/bottler.rb'
 
 describe Bottler do
   let(:bottler) { Bottler.new }
-  let(:formula) { 'tor' }
+  let(:formula) { ENV['FORMULA'] }
 
   context '#list' do
     it 'lists installed homebrew formula' do
