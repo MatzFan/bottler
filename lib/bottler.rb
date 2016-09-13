@@ -12,6 +12,6 @@ class Bottler
   end
 
   def bottle(formula)
-    puts `brew bottle #{formula}`
+    `brew bottle #{formula}`
   end
 end
