@@ -1,5 +1,5 @@
-require 'rspec/core/rake_task'
+task default: %w(exit)
 
-RSpec::Core::RakeTask.new(:spec)
-
-task default: :spec
+task :exit do
+  exit
+end
