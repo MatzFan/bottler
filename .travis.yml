@@ -17,3 +17,5 @@ before_install:
   # - brew cask install xquartz # not needed for 10.9????
   - brew install --build-bottle $FORMULA
   - brew bottle $FORMULA
+
+install: travis_wait 20 mvn install
