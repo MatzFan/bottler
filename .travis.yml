@@ -8,7 +8,7 @@ os:
 # osx_image: xcode6.4 # specify 10.10
 
 env:
-  - FORMULA=orfeo-42
+  - FORMULA=mapserver-64
 
 before_install:
   - echo $PATH
