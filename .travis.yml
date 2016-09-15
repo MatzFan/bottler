@@ -8,7 +8,7 @@ os:
 # osx_image: xcode6.4 # specify 10.10
 
 env:
-  - FORMULA=taudem
+  - FORMULA=wxmac-mono
 
 before_install:
   - echo $PATH
@@ -18,4 +18,4 @@ before_install:
   - brew install --build-bottle $FORMULA
   - brew bottle $FORMULA
 
-install: travis_wait 20 mvn install
+# install: travis_wait 20 mvn install
