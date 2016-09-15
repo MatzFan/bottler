@@ -7,10 +7,13 @@ os:
 
 # osx_image: xcode6.4 # specify 10.10
 
+env:
+  - FORMULA=orfeo-42
+
 before_install:
   - echo $PATH
   - brew update
   - brew tap $TAP
-  - brew cask install xquartz # not needed for 10.9????
+  # - brew cask install xquartz # not needed for 10.9????
   - brew install --build-bottle $FORMULA
   - brew bottle $FORMULA
