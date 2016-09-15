@@ -1,4 +1,6 @@
 language: ruby
+rvm:
+  - 2.2
 
 os:
   - osx # default 10.9
@@ -6,4 +8,5 @@ os:
 osx_image: xcode7.1 # specify 10.10
 
 before_install:
+  - echo $PATH
   - brew update
