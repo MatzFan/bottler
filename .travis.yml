@@ -7,9 +7,8 @@ os:
 
 # osx_image: xcode6.4 # specify 10.10
 
-env:
-  - TAP=osgeo/osgeo4mac
-  - FORMULA=gdal-grass64
+# env:
+#   - FORMULA=gdal-grass64
 
 before_install:
   - echo $PATH
