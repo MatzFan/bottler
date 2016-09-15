@@ -13,5 +13,5 @@ before_install:
   - brew update
   - brew tap $TAP
   # - brew cask install xquartz # not needed for 10.9????
-  - travis_wait 20 brew install --build-bottle $FORMULA
+  - travis_wait 30 brew install --build-bottle $FORMULA
   - brew bottle $FORMULA
