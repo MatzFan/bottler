@@ -8,7 +8,7 @@ os:
 # osx_image: xcode6.4 # specify 10.10
 
 env:
-  - FORMULA=monteverdi2
+  - FORMULA=taudem
 
 before_install:
   - echo $PATH
