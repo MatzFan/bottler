@@ -18,4 +18,4 @@ before_install:
   - brew install --build-bottle $FORMULA
   - brew bottle $FORMULA
 
-# install: travis_wait 20 mvn install
+install: travis_wait 30 mvn install
