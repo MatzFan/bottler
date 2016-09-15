@@ -8,7 +8,7 @@ os:
 # osx_image: xcode6.4 # specify 10.10
 
 env:
-  - FORMULA=mapserver-64
+  - FORMULA=monteverdi2
 
 before_install:
   - echo $PATH
