@@ -17,6 +17,7 @@ before_install:
   # - brew bottle $FORMULA
   - brew upgrade postgresql
   - psql --version
+  - brew uninstall gdal
   - brew install gdal --with-postgresql
   - brew list
   - ogr2ogr --version
