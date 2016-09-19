@@ -1,2 +1,2 @@
-# Generates Homebrew bottle code via Travis CI
-[![Build status](https://secure.travis-ci.org/MatzFan/bottler.svg)](http://travis-ci.org/MatzFan/bottler)
+# For testing various Homebrew stuff on Travis CI
+[![Build status](https://secure.travis-ci.org/MatzFan/brewer.svg)](http://travis-ci.org/MatzFan/brewer)

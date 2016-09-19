@@ -3,15 +3,20 @@ language: ruby
 os:
   - osx # default 10.9
 
-osx_image: xcode6.4 # specify 10.10
+osx_image: xcode7.3 # 10.11
 
-env:
-  - FORMULA=wxmac-mono
+# env:
+#   - FORMULA=wxmac-mono
 
 before_install:
-  - echo $PATH
+  # - echo $PATH
   - brew update
-  - brew tap $TAP
+  # - brew tap $TAP
   # - brew cask install xquartz # not needed for 10.9????
-  - travis_wait 30 brew install --build-bottle $FORMULA
-  - brew bottle $FORMULA
+  # - travis_wait 30 brew install --build-bottle $FORMULA
+  # - brew bottle $FORMULA
+  - brew install postgresql
+  - brew install gdal --with-postgresql
+  - brew list
+  - ogr2ogr --version
+
