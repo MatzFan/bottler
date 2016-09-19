@@ -15,11 +15,10 @@ before_install:
   # - brew cask install xquartz # not needed for 10.9????
   # - travis_wait 30 brew install --build-bottle $FORMULA
   # - brew bottle $FORMULA
-  - brew uninstall postgresql postgis gdal json-c
+  - brew uninstall postgresql postgis gdal liblwgeom libspatialite json-c
   - brew missing
   - brew install postgresql
   - psql --version
-  - brew uninstall gdal
   - travis_wait 30 brew install gdal --with-postgresql
   - brew list
   - ogr2ogr --version
