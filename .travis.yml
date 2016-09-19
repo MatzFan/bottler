@@ -15,7 +15,8 @@ before_install:
   # - brew cask install xquartz # not needed for 10.9????
   # - travis_wait 30 brew install --build-bottle $FORMULA
   # - brew bottle $FORMULA
-  - brew install postgresql
+  - brew upgrade postgresql
+  - postgresql --version
   - brew install gdal --with-postgresql
   - brew list
   - ogr2ogr --version
