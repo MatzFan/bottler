@@ -16,7 +16,7 @@ before_install:
   # - travis_wait 30 brew install --build-bottle $FORMULA
   # - brew bottle $FORMULA
   - brew upgrade postgresql
-  - postgresql --version
+  - psql --version
   - brew install gdal --with-postgresql
   - brew list
   - ogr2ogr --version
